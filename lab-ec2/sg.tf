@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_access" {
   vpc_id      = "vpc-0383c9825b17dfef1"
   name        = "allow_acess"
-  description = "Allow pots cluster kubernetes inbound traffic"
+  description = "Allow ports cluster kubernetes inbound traffic"
 
   ingress {
     description = "allow ssh"
@@ -12,7 +12,7 @@ resource "aws_security_group" "allow_access" {
   }
 
   ingress {
-    description = "allow ssh"
+    description = "allow api-server"
     from_port   = 6443
     to_port     = 6443
     protocol    = "tcp"
@@ -30,10 +30,10 @@ resource "aws_security_group" "allow_access" {
 
 resource "aws_security_group_rule" "allow_k8s" {
   security_group_id        = aws_security_group.allow_access.id
-  description              = "Allow ports kubernetes"
+  description              = "Allow ports kubernetes between instances"
   type                     = "ingress"
   from_port                = 0
   to_port                  = 65535
-  protocol                 = "tcp"
+  protocol                 = -1
   source_security_group_id = aws_security_group.allow_access.id
 }
