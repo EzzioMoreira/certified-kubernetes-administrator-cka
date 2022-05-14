@@ -56,7 +56,7 @@ While the other addons are not strictly required, all Kubernetes clusters should
 ### Cluster-level Logging
 A [cluster-level logging](https://kubernetes.io/docs/concepts/cluster-administration/logging/) mechanism is responsible for saving container logs to a central log store with search/browsing interface.
 
-## Building a Kubernetes Cluster
+# Building a Kubernetes Cluster
 - [Creating infrastructure](./lab-ec2/)
 - [Building Cluster](./building-cluster/README.md)
 
