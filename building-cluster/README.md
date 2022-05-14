@@ -1,4 +1,6 @@
 # Building a Kubernetes Cluster
+Use this project Terraform for provisioning your infrastructure.
+
 ## Documentation
 - [Installing kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
 - [Creating a cluster with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
