@@ -6,7 +6,7 @@ export $(shell sed 's/=.*//' $(cnf))
 # Get the latest tag
 TAG=$(shell git describe --tags --abbrev=0)
 GIT_COMMIT=$(shell git log -1 --format=%h)
-AWS_ACCOUNT=463653475548
+AWS_ACCOUNT=456269942226
 TERRAFORM_VERSION=1.0.0
 
 # HELP

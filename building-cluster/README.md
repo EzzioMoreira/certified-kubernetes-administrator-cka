@@ -9,6 +9,27 @@ Use this step by step for building you cluster.
 Before continuing with this lesson make sure that infrastructure exists 
 > [Creating infrastructure](./lab-ec2/README.md)
 
+### Doors we should be concerned about
+
+**MASTER**
+
+Protocol|Direction|Port Range|Purpose|Used By
+--------|---------|----------|-------|-------
+TCP|Inbound|6443*|Kubernetes API server|All
+TCP|Inbound|2379-2380|etcd server client API|kube-apiserver, etcd
+TCP|Inbound|10250|Kubelet API|Self, Control plane
+TCP|Inbound|10251|kube-scheduler|Self
+TCP|Inbound|10252|kube-controller-manager|Self
+
+* Toda porta marcada por * é customizável, você precisa se certificar que a porta alterada também esteja aberta.
+
+**WORKERS**
+
+Protocol|Direction|Port Range|Purpose|Used By
+--------|---------|----------|-------|-------
+TCP|Inbound|10250|Kubelet API|Self, Control plane
+TCP|Inbound|30000-32767|NodePort|Services All
+
 ### Configuration hostname
 On the `srv-01` define the hostname with the following command:
 ```shell
@@ -141,8 +162,8 @@ kubectl get nodes
 The output will be:
 
 ```shell
-NAME         STATUS     ROLES                  AGE     VERSION
-k8s-master   Ready      control-plane,master   8m53s   v1.23.0
-k8s-node01   NotReady   <none>                 9s      v1.23.0
-k8s-node02   NotReady   <none>                 9s      v1.23.0
+NAME         STATUS   ROLES                  AGE     VERSION
+k8s-master   Ready    control-plane,master   4m11s   v1.23.0
+k8s-node01   Ready    <none>                 2m11s   v1.23.0
+k8s-node02   Ready    <none>                 2m11s   v1.23.0
 ```
