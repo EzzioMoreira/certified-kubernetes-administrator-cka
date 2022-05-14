@@ -1,0 +1,13 @@
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.d
+**/.terraform.lock.hcl
+*.tfvars
+plan.apply
+plan.destroy
+!bootstrap/terraform.tfstate
+!bootstrap/terraform.tfstate.backup
+*.pem
+*.env
+.env
