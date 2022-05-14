@@ -1,6 +1,6 @@
 # Building a Kubernetes Cluster
 
-Use this pass-by-pass for building you cluster.
+Use this step by step for building you cluster.
 
 ## Documentation
 - [Installing kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/)
