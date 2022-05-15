@@ -1,7 +1,3 @@
-# Provisioning infrastructure 
-
-Use this project Terraform for provisioning your infrastructure.
-
 ## Requirements
 
 | Name | Version |
@@ -44,14 +40,3 @@ Use this project Terraform for provisioning your infrastructure.
 | Name | Description |
 |------|-------------|
 | <a name="output_public_ip"></a> [public\_ip](#output\_public\_ip) | n/a |
-
-
-## For help, run the following commands:
-
-```make
-make help: ## Run make help 
-terraform-init: ## Run terraform init to download all necessary plugins
-terraform-plan: ## Exec a terraform plan and puts it on a file called plano
-terraform-apply: ## Uses plano to apply the changes on AWS.
-terraform-destroy: ## Destroy all resources created by the terraform file in this repo.
-```
