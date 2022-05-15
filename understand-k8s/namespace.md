@@ -54,6 +54,6 @@ When you create a [Service](https://kubernetes.io/docs/concepts/services-network
 # Now you try working with namespace
 1. Create the "staging" Namespace.
 2. List all of the current namespaces in the cluster. Save this list to the file `/tmp/namespaces.log`.
-3. Create a namespace whit name "production" and save it to the file `/tmp/production.yaml`.
+3. Create a manifest for namespace whit the name "production" and save it to the file `/tmp/production.yaml`.
 
 Solution: [click here](../solutions/namespace.md).
