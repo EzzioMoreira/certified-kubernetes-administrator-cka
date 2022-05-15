@@ -37,6 +37,6 @@ module "web_provisioner" {
 
    arguments = ["--user=ubuntu"]
    envs      = ["host=${aws_instance.web[0].public_ip}"]
-   playbook  = "./ansible/playbook.yaml"
+   playbook  = "../ansible/playbook.yaml"
    dry_run   = false
 }
