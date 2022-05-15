@@ -31,3 +31,12 @@ resource "aws_instance" "web" {
   }
 
 }
+
+module "web_provisioner" {
+   source    = "github.com/cloudposse/tf_ansible"
+
+   arguments = ["--user=ubuntu"]
+   envs      = ["host=${aws_instance.web[0].public_ip}"]
+   playbook  = "./ansible/playbook.yaml"
+   dry_run   = false
+}

@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_access" {
-  vpc_id      = "vpc-0383c9825b17dfef1"
+  vpc_id      = var.vpc_id
   name        = "allow_acess"
   description = "Allow ports cluster kubernetes inbound traffic"
 

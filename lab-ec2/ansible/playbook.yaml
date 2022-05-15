@@ -1,0 +1,13 @@
+---
+  - name: Configure host
+    hosts: all
+    become: yes
+    become_method: sudo
+    tasks:
+      - name: Install packages Ubuntu
+        apt:
+          name: "{{ packages }}"
+        vars:
+          packages:
+          - git
+          - python3-pip
