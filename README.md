@@ -5,7 +5,7 @@ Content of this repository git is based on the course: [Certified Kubernetes Adm
 A Kubernetes cluster consists of a set of worker machines, called nodes, that run containerized applications. Every cluster has at least one worker node.
 - https://kubernetes.io/docs/concepts/overview/components/
 
-![k8s-componets](./img/k8s-architecture.svg)
+![k8s-componets](./img/k8s-architecture.png)
 
 ## Control Plane Componets
 The control plane's components make global decisions about the cluster (for example, scheduling), as well as detecting and responding to cluster events (for example, starting up a new pod when a deployment's replicas field is unsatisfied). Control plane components can be run on any machine in the cluster.
