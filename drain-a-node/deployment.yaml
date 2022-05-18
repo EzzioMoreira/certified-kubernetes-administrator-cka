@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: metal-deployment
+  labels:
+    app: metal-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: metal-deployment
+  template:
+    metadata:
+      labels:
+        app: metal-deployment
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        ports:
+        - containerPort: 80
