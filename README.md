@@ -65,4 +65,7 @@ A [cluster-level logging](https://kubernetes.io/docs/concepts/cluster-administra
 ### Namespace
 - [Using Namespaces](./understand-k8s/namespace.md)
 
+### Drain nodes
+- [Safely Drain a Node](./drain-a-node/)
+
 ...Continue
