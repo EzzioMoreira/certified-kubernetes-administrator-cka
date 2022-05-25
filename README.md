@@ -68,4 +68,7 @@ A [cluster-level logging](https://kubernetes.io/docs/concepts/cluster-administra
 ### Drain nodes
 - [Safely Drain a Node](./drain-a-node/)
 
+### Upgrading kubeadm cluster
+- [Upgrading k8s with kubeadm](./understand-k8s/upgrade-kubeadm.md/)
+
 ...Continue
