@@ -74,4 +74,7 @@ A [cluster-level logging](https://kubernetes.io/docs/concepts/cluster-administra
 ### Backing Up and Restoring Etcd Cluster Data
 - [Backing up an etcd cluster](./understand-k8s/backup-restore-etcd.md)
 
+### Command line tool (kubectl)
+- [Kubectl command line](./understand-k8s/kubectl-commands.md)
+
 ...Continue
