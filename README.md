@@ -71,4 +71,7 @@ A [cluster-level logging](https://kubernetes.io/docs/concepts/cluster-administra
 ### Upgrading kubeadm cluster
 - [Upgrading k8s with kubeadm](./understand-k8s/upgrade-kubeadm.md/)
 
+### Backing Up and Restoring Etcd Cluster Data
+- [Backing up an etcd cluster](./understand-k8s/backup-restore-etcd.md)
+
 ...Continue
